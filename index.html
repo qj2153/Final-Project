@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Music Lesson</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Project Title	 -->
+  <div class="jumbotron" id="jumbotron">
+    <div class="container">
+      <h1>Music Lesson: Orchestral Instruments</h1>
+      <p>Learning some of the important instruments in an orchestra!</p>
+      
+
+    </div>
+  </div>
+  <!-- Content -->
+  <div class="container">
+    <!-- 	Part 1: Instrument	 -->
+    <div>
+      <h2 style="color:#AF6657;">Intro</h2>
+      <a><em>Click on the pictures to listen to the sound of each instrument. </em></a>
+      <div id="instrument-items">
+        <!--   instruments go here     -->
+      </div>
+    </div>
+    <br>
+    <!--   Part 2: Quiz   -->
+    <div>
+      <h2 style="color:#AF6657;">Quiz</h2>
+      <form>
+        <div>
+          <h4>What instrument do you hear?</h4>
+        </div>
+
+        <!--Q1-->
+        <div id="Q1">
+          <div>
+            <h5>Q1</h5>
+            <audio controls src="https://feiwangart.files.wordpress.com/2020/06/e4bda0e590ace5be97e588b0.mp3"></audio>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://www.yamaha.com/us/pianos/images/homepageStill.jpg" alt="piano">
+                  <h5 class="card-title">Piano</h5>
+                  <input type="radio" name="Q1" value="true" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://img.freepik.com/free-photo/detail-silver-flute-key-shining-by-sunset-light-with-cloudy-blue-sky_44651-387.jpg?size=626&ext=jpg" alt="flute">
+                  <h5 class="card-title">Flute</h5>
+                  <input type="radio" name="Q1" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label for="violin1">
+                  <img class="card-img-top" src="https://cdn.shoplightspeed.com/shops/629006/files/17609348/headline-2.jpg" alt="violin">
+                  <h5 class="card-title">Violin</h5>
+                  <input type="radio" name="Q1" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+
+        <!--Q2-->
+        <div id="Q2">
+          <div>
+            <h5>Q2</h5>
+            <audio controls src="https://feiwangart.files.wordpress.com/2020/06/flute-1.mp3"></audio>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/712ZyImPK8L._AC_SL1500_.jpg" alt="trumpet">
+                  <h5 class="card-title">Trumpet</h5>
+                  <input type="radio" name="Q2" value="false"  onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://www.sagemusic.co/wp-content/uploads/2019/08/music-3090204_1280.jpg" alt="flute">
+                  <h5 class="card-title">Flute</h5>
+                  <input type="radio" name="Q2" value="true" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://images.ctfassets.net/3s5io6mnxfqz/2tgKAE2XKmpgAlZqoSxRW/ed92236cb34d77fff34fbcefb1a5f805/AdobeStock_187055739.jpeg" alt="violin">
+                  <h5 class="card-title">Violin</h5>
+                  <input type="radio" name="Q2" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <br>
+        </div>
+        <!--Q3-->
+        <div id="Q3">
+          <div>
+            <h5>Q3</h5>
+            <audio controls src="https://feiwangart.files.wordpress.com/2020/06/violin-2.mp3"></audio>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://www.thomann.de/pics/bdb/323120/7526520_800.jpg" alt="clarinet">
+                  <h5 class="card-title">Clarinet</h5>
+                  <input type="radio" name="Q3" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://thumbs-prod.si-cdn.com/6qHrICUqhXSmZ0oW8yaVAwKt3WQ=/fit-in/1600x0/https://public-media.si-cdn.com/filer/3a/5d/3a5d5034-88c8-4078-89c6-7e1f3189e253/stradivarius_violin_in_the_royal_palace_in_madrid.jpg" alt="violin">
+                  <h5 class="card-title">Violin</h5>
+                  <input type="radio" name="Q3" value="true" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://cdn11.bigcommerce.com/s-a47hlxhj54/images/stencil/1280x1280/products/1137/4529/7Y0A2028-web__04410.1536785916.jpg?c=2&imbypass=on" alt="trumpet">
+                  <h5 class="card-title">Trumpet</h5>
+                  <input type="radio" name="Q3" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+        <!--Q4-->
+        <div id="Q4">
+          <div>
+            <h5>Q4</h5>
+            <audio controls src="https://feiwangart.files.wordpress.com/2020/06/trumpet-b-major.wav"></audio>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://ainekerr.ie/wp-content/uploads/2019/08/flute-4006386_960_720.jpg" alt="flute">
+                  <h5 class="card-title">Flute</h5>
+                  <input type="radio" name="Q4" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://classicalmel.files.wordpress.com/2019/04/ehrbar.jpg" alt="piano">
+                  <h5 class="card-title">Piano</h5>
+                  <input type="radio" name="Q4" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://stomvi-usa.com/wp-content/uploads/2019/02/Screen-Shot-2019-02-07-at-12.41.04-PM.png" alt="trumpet">
+                  <h5 class="card-title">Trumpet</h5>
+                  <input type="radio" name="Q4" value="true" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <br>
+        </div>
+        <!--Q5-->
+        <div id="Q5">
+          <div>
+            <h5>Q5</h5>
+            <audio controls src="https://feiwangart.files.wordpress.com/2020/06/clarinet-basic.wav"></audio>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://www.violinist.com/art/blog/27855.jpg" alt="violin">
+                  <h5 class="card-title">Violin</h5>
+                  <input type="radio" name="Q5" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://media1.s-nbcnews.com/j/streams/2013/November/131108/8C9627596-131107-clarinet-4x3-649p.fit-760w.jpg" alt="clarinet">
+                  <h5 class="card-title">Clarinet</h5>
+                  <input type="radio" name="Q5" value="true" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://www.whyharrelson.com/uploads/3/9/5/5/3955654/s678117168344851198_p361_i31_w1024.jpeg" alt="trumpet">
+                  <h5 class="card-title">Trumpet</h5>
+                  <input type="radio" name="Q5" value="false" onclick="checkAnswer(event)">
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <br>
+        </div>
+        <!--Q6-->
+        <div id="Q6">
+          <div>
+            <h5>Extra Credit 1 (Select all that apply)</h5>
+            <audio controls src="https://feiwangart.files.wordpress.com/2020/06/secret-garden-song-for-a-new-beginning-1.mp3"></audio>
+          </div>
+          <div class="card-group">
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://cdn11.bigcommerce.com/s-6412e/images/stencil/2048x2048/products/2503/24156/ScratchedSilvGold2500__78940.1562872866.jpg?c=2&imbypass=on" alt="trumpet">
+                  <h5 class="card-title">Trumpet</h5>
+                  <input type="checkbox" name="extra1" value1="false" id="trumpete1">
+                </label>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://has-sound.com/wp-content/uploads/2019/11/Student-clarinet-reviews.jpg" alt="clarinet">
+                  <h5 class="card-title">Clarinet</h5>
+                  <input type="checkbox" name="extra1" value2="false">
+                </label>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://www.whyharrelson.com/uploads/3/9/5/5/3955654/s678117168344851198_p361_i31_w1024.jpeg" alt="flute">
+                  <h5 class="card-title">Flute</h5>
+                  <input type="checkbox" name="extra1" value3="true" onclick="checkAnswerExtra(event)">
+                </label>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://cdn4.creativecirclemedia.com/severna/original/20181108-192410-Pottiger%20Annapolis%20Symphony%20Academy%201.jpg" alt="violin">
+                  <h5 class="card-title">Violin</h5>
+                  <input type="checkbox" name="extra1" value4="true">
+                </label>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex flex-column">
+                <label>
+                  <img class="card-img-top" src="https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="piano">
+                  <h5 class="card-title">Piano</h5>
+                  <input type="checkbox" name="extra1" value5="true">
+                </label>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <div>
+          <h2 style="color:#AF6657;"> Reflection </h2>
+          <p>Before we check your result for the final question, let's take a moment to reflect on your experience in learning orchestral instruments today. Which instrument(s) do you like the most and why? </p> 
+          <textarea class="form-control reflection" rows="3" placeholder="Your answer"></textarea>
+          <br>
+          <p>What an additional instrument would you want to add to the quiz?</p>
+          <textarea class="form-control reflection other" rows="3" placeholder="Other instrument"></textarea>
+          <pre id="potential"><br><br></pre>
+        </div>
+        <div>
+        <button type="submit" class="button buttonSubmit" onclick="response()" id="submit">Submit and check the final answer for the quiz </button>
+        <button type="button" class="button buttonSave" onclick="window.print()" value="SubmitIt">Download today's lesson for self-review</button>
+        </div>
+      </form>
+    
+    </div>
+    
+    <br>
+    <!--Part 3: Extension -->
+    <h2 style="color:#AF6657;">Moving beyond </h2>
+    <p>Didn't get enough fun by learning these five instruments? Continue discovering more sounds of other instruments and get prepared for our next lesson!</p>
+    <br>
+    <div class="text-center">
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/vjJcGlQraek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <br> <br>
+     <button type="submit" class="button buttonSet" onclick="setAccount()">Set an account to save your progress! </button>
+     <br><br> 
+     <button type="submit" class="button buttonLogin" onclick="hello(event)">Login </button>
+     <button type="submit" class="button buttonExit" onclick="goodbye(event)">Exit</button>
+    </div>
+
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
